@@ -45,3 +45,20 @@ print("b -----------")
 print(b.ndim)
 print(b.shape)
 print(b.size)
+
+
+# work math with numpy
+a = [1, 2, 5, 7]
+print(np.prod(a)) # برای ضرب 
+
+b = np.power([2, 3.5], 3) # اعداد داخل لیست به توان 3 میرسه که بیرونش نوشتیم
+print(b)
+
+c = np.linspace(-np.pi/2, np.pi/2, 100)
+print(np.sin(c)) # برای گرفتن سینوس
+
+e = 4
+print(np.sqrt(e)) # برای گرفتن جذر یک عدد
+print(np.emath.sqrt(-4)) # emath در فضاهای مختلف انجام میده // یا میشه گفت خارج از اعداد حقیقی رو حساب میکنه
+
+
