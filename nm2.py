@@ -95,3 +95,15 @@ print(b[0,1]) # از ردیف اول 1 رو انتخاب کن (0 ردیف و 1 i
 print(b[0,1:])
 print(b[1, -2:])
 print(b[2, 1:3])
+
+# boolean incex
+a = np.arange(12).reshape(3, 4)
+
+print(a<5)
+print(a[a < 5])
+
+b = a[(a > 2) & (a < 11)]
+print(b)
+
+c = a[(a < 2) | (a % 3 == 0)]
+print(c)
