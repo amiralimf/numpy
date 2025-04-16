@@ -78,3 +78,20 @@ print(c)
 c = b.flatten()
 print(c)
 
+
+# work with index
+a = np.arange(3, 9) # 3 تا 9
+print(a[0]) # اولین
+print(a[2]) # سومین
+print(a[2:]) # 3 به بعد
+print(a[-3:]) # ار اخر 3 به بعد
+print(a[2:4]) # از سومین تا index 4
+
+b = np.arange(12).reshape(3,4)
+print(b[0]) # ردیف اول رو میده
+print(b[0,1]) # از ردیف اول 1 رو انتخاب کن (0 ردیف و 1 index)
+# b[0,1] => 0 = ردیف ==> 
+    # 1 = index انتخاتبی 
+print(b[0,1:])
+print(b[1, -2:])
+print(b[2, 1:3])
