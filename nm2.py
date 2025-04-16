@@ -62,3 +62,19 @@ print(np.sqrt(e)) # برای گرفتن جذر یک عدد
 print(np.emath.sqrt(-4)) # emath در فضاهای مختلف انجام میده // یا میشه گفت خارج از اعداد حقیقی رو حساب میکنه
 
 
+# shapre and reshape / میتونید از 1 در 1 تبدیل کنید به 3 در 4 یا ...
+a = np.arange(12)
+print(a)
+b = a.reshape(3, 4)
+print(b)
+    # -1 convert it to flat again / یا همون 1 در 1 قبل
+c = b.reshape(-1)
+print(c)
+    # همون کاره -1 رو میکنه  
+c = b.ravel()
+print(c)
+    # flatten هم همون کاره -1 رو میکنه ravel  
+        # با این تفاوت که یه copy میسازه   
+c = b.flatten()
+print(c)
+
