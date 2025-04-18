@@ -107,3 +107,29 @@ print(b)
 
 c = a[(a < 2) | (a % 3 == 0)]
 print(c)
+# work with 2 array
+
+a = np.array([1, 3, 2, 7])
+b = np.array([4, 1, 1, 3])
+
+# plus
+print(a + b) # option one
+print(np.add(a, b)) # option two => the orginal
+
+# *
+print(a * b) # option one
+print(np.multiply(a, b)) # option two => the orginal
+
+# ** tavan 
+print(a ** b) # option one
+print(np.power(a, b)) # option two => the orginal
+
+
+# matris
+x = np.array([[1, 2], [3, 4]])
+y = np.array([[3, 1], [4, 7]])
+
+print(x @ y) # option one
+print(np.matmul(x, y)) # option two => the orginal
+
+
