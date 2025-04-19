@@ -133,3 +133,12 @@ print(x @ y) # option one
 print(np.matmul(x, y)) # option two => the orginal
 
 
+# ----
+a = ([1, 2, 3])
+b = 2
+
+a = np.array([1, 2, 3, 4, 5])
+mean = a.mean()
+std = a.std()
+normalize = (a - mean) / std
+print(normalize)
