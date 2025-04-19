@@ -142,3 +142,16 @@ mean = a.mean()
 std = a.std()
 normalize = (a - mean) / std
 print(normalize)
+
+
+# height simulator
+height_mean = 170
+height_std = 5
+
+heights = np.random.normal(height_mean, height_std, size=(3, 1000))
+print(heights.mean(), heights.std())
+
+# score simulator
+score = np.random.uniform(low=10, high=20, size=50)
+print("-----------")
+print(score)
